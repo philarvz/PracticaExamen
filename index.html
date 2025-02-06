@@ -6,57 +6,69 @@
     <title>Tecnología</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
   </head>
-  <body >
-    <header class="ps-3">
-        <ul class="nav nav-underline mb-3">
-            <img src="https://placehold.co/50x50.png" alt="logo">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#imagenes-cards">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#nosotros">Acerca de nosotros</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#historia">Nuestra historia</a>
-            </li>
-            <li class="nav-item">
-                <a class="nav-link" href="#">Contacto</a>
-              </li>
-          </ul>
+  <body>
+    <header>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/logo.png" alt="logo" width="42px" height="42px" class="rounded-circle">
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" 
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="#imagenes-cards">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#nosotros">Acerca de nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#historia">Nuestra historia</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contacto">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
-    <section id="#imagenes-cards">
-        <div class="container mb-3">
+    
+    <section id="imagenes-cards">
+        <div class="container-fluid mb-3">
             <div class="row">
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card" style="width: 24rem;">
-                        <h5 class="card-title">Samsung</h5>
-                        <img src="https://placehold.co/350x150.png"  alt="img1">
+                <div class="col-md-6 col-lg-4 mb-3">
+                    <div class="card shadow-sm border-0">
+                        <h5 class="card-title m-3">Samsung</h5>
+                        <img src="./assets/samsung.png"  alt="img1">
                         <div class="card-body">
-                            <h5 class="card-title ">Card title</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="fs-4 fw-normal">Samsung Galaxy S23 Ultra</p>
+                            <p class="card-text">Samsung es una empresa surcoreana líder en tecnología, conocida por sus smartphones, televisores y semiconductores.</p>
                         </div>
                       </div> 
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card" style="width: 24rem;">
-                        <h5 class="card-title">iPhone</h5>
-                        <img src="https://placehold.co/350x150.png"  alt="...">
-        
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <div class="card shadow-sm border-0">
+                        <h5 class="card-title m-3">iPhone</h5>
+                        <img src="./assets/iphone.png"  alt="img2">
                         <div class="card-body">
-                            <h5 class="card-title ">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="fs-4 fw-normal">iPhone 15 Pro Max</p>
+                          <p class="card-text">Apple es una empresa líder en tecnología, conocida por sus iPhones, MacBooks, iPads y dispositivos innovadores.</p>
                         
                         </div>
                       </div> 
                 </div>
-                <div class="col-12 col-md-6 col-lg-4">
-                    <div class="card" style="width: 24rem;">
-                        <h5 class="card-title">Motorola</h5>
-                        <img src="https://placehold.co/350x150.png"  alt="...">
+                <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <div class="card shadow-sm border-0">
+                        <h6 class="card-title m-3">Xiaomi</h6>
+                        <img src="./assets/xiaomi.png"  alt="img3">
         
                         <div class="card-body">
-                            <h5 class="card-title ">Card title</h5>
-                          <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            <p class="fs-4 fw-normal">Xiaomi 13 Pro</p>
+                          <p class="card-text">Xiaomi es una empresa china de tecnología, conocida por sus smartphones, gadgets y productos inteligentes a precios competitivos.</p>
                           
                         </div>
                       </div> 
@@ -71,31 +83,90 @@
             </div>
 
         <section id="nosotros">
-            <div class="row">
-                <div class="col-lg-12 col-md-12 justify-content-center mb-3">
-                    <p class="text-center">Descubriendo la mejor Tecnología del momento</p>
-                </div>
-            </div>
+            <div class="text-center">
+                <span class="border-bottom">Descubriendo la mejor Tecnología del momento</span>
+            </div>       
         </section>
-        <section id="#historia">
-            <div class="container">
+        <section >
+            <div class="container-fluid mt-3">
                 <div class="row">
-                    <div class="col-12 col-md-12 m-3">
-                        <div class="col-lg-6 col-md-12">
-                            <div class="card" style="width: 38rem;">
-                                <h5 class="card-title">Historia</h5>
-                                <img src="https://placehold.co/350x150.png"  alt="img1">
+                        <div class="col-lg-6 col-md-12 ">
+                            <div class="card" >
+                                <h5 class="card-title m-3">Sobre nosotros</h5>
+                                <img src="./assets/nosotros.png"  alt="img1">
                                 <div class="card-body">
-                                    <h5 class="card-title ">Card title</h5>
-                                    <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                    <p class="card-text">PingüiTech es una empresa especializada en la venta de smartphones de marcas líderes como Samsung, Apple y Xiaomi. Con un pingüino como su mascota, ofrece tecnología de punta con precios accesibles y excelente servicio. 🐧📱</p>
                                 </div>
                               </div> 
                         </div>
-                    </div>
+                        <div class="col-lg-6 col-md-12 justify-content-center d-flex flex-column ">
+                            <div class="col-lg-6 d-flex align-self-center">
+                                <div class="card border border-0 ">
+                                    <div class="card-body">
+                                      <h5 class="card-title">PingüiTech 🐧📱</h5>
+                                      <p class="card-text">es la tienda ideal para los amantes de la tecnología. Con un simpático pingüino como símbolo de confianza, ofrece los últimos modelos de Samsung, Apple, Xiaomi y más. Además, cuenta con promociones exclusivas, envíos rápidos y asesoría personalizada para que encuentres el smartphone perfecto. ¡Tecnología fresca al mejor precio! ❄️✨</p>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
                 </div>
             </div>
-            
         </section>
+        <section  class="mb-3">
+            <div class="container-fluid mt-3">
+                <div class="row">
+                        <div class="col-lg-6 col-md-12 justify-content-center d-flex flex-column ">
+                            <div class="col-lg-6 d-flex align-self-center">
+                                <div class="card border border-0 ">
+                                    <div class="card-body">
+                                      <h5 class="card-title">Entérate</h5>
+                                      <p class="card-text">En PingüiTech, nuestra misión siempre ha sido brindar acceso a la mejor tecnología móvil con un toque de frescura. Fundada en 2015 por un grupo de apasionados por los dispositivos inteligentes, nacimos con el objetivo de ofrecer a nuestros clientes los últimos modelos de smartphones, tabletas y gadgets, a precios competitivos.</p>
+                                    </div>
+                                  </div>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-12 ">
+                            <div class="card" >
+                                <img src="./assets/historia.png"  alt="img1">
+                                <div class="card-body">
+                                    <p class="card-text">Nuestro nombre y logo, inspirado en un pingüino, reflejan la cercanía, la confiabilidad y el toque único que queríamos aportar a un mercado a veces saturado. El pingüino, conocido por ser resistente y adaptable, representa nuestra filosofía: ser fuertes frente a los desafíos del mercado y adaptarnos a las necesidades de nuestros clientes.</p>
+                                </div>
+                              </div> 
+                        </div>
+                </div>
+            </div>
+        </section>
+        <section id="historia">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-12 col-md-10 col-lg-12 mx-auto d-flex justify-content-center align-items-center">
+                        <div class="card mb-3 border-0 shadow-sm mt-3">
+                            <h5 class="card-title m-3">Nuestra historia</h5>
+                            <div class="card-body ">
+                              <p class="card-text">En 2015, nacimos con una misión clara: ofrecer los mejores teléfonos de múltiples compañías en un solo lugar. 🚀📲</p>
+                              <p class="card-text"><small class="text-body-secondary">Detectamos que comparar dispositivos, operadoras y planes era complicado, así que creamos PingüiTech 🐧, una tienda donde la tecnología, los precios accesibles y el buen servicio van de la mano. 💡💙</small></p>
+                            </div>
+                          </div>
+                </div>
+                </div>
+            </div>
+           
+        </section>
+        <footer id="contacto">
+            <div class="container-fluid mt-5 bg-body-tertiary ">
+                <div class="row d-flex justify-content-between align-items-center">
+                   <div class="col-lg-5 col-md-4">
+                    <p class="fs-2 fw-semibold ms-5 p-2">Contáctanos</p>
+                </div>
+                <div class="col-lg-5 col-md-8 d-flex flex-container-fluid justify-content-end me-3">
+                    <img src="./assets/facebook.png" alt="fb" width="25px" height="auto" class="img-fluid me-2 rounded-circle">
+                    <p class="me-5">Facebook</p>
+                    <img src="./assets/instagram.png" alt="ig" width="25px" height="auto" class="img-fluid me-2 rounded-circle" >
+                    <p>Instagram</p>
+                </div>
+                </div>
+            </div>
+        </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   </body>
 </html>
